@@ -193,7 +193,6 @@ body {
     place-items: center;
     color: var(--bg);
     position: relative;
-    cursor: pointer;
 }
 
 .progress::after {
@@ -332,7 +331,7 @@ footer .credit a {
 }
 
 .none-display {
-    display: none;
+    display: none !important;
 }
 
 .result {

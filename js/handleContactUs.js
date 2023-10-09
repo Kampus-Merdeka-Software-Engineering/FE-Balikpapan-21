@@ -10,13 +10,23 @@ async function submitContactUs(data) {
       });
   
       const result = await response.json();
-      console.log("Success:", result);
+
+      contactUsForm.reset();
+      toggleModal();
+      console.log(result);
+      
+
     } catch (error) {
       console.error("Error:", error);
     }
   }
   
   let contactUsForm = document.getElementById("contactUsForm");
+
+  function toggleModal() {
+    let modal = document.querySelector(".modal");
+    modal.classList.toggle("active");
+  }
   
   contactUsForm.addEventListener("submit", async(event) => {
     event.preventDefault();

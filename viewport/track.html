@@ -1,59 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required Meta Tags -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Us</title>
 
-    <!--Font Link-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <!-- Required Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us</title>
 
-    <!--feather Icons-->
-    <script src="https://unpkg.com/feather-icons"></script>
+  <!--Font Link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
-    <!-- Link Stylesheet -->
-    <link rel="stylesheet" href="/style/track.css" />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <a href="#" class="logo"><h1>XXIShipping</h1></a>
+  <!--feather Icons-->
+  <script src="https://unpkg.com/feather-icons"></script>
 
-      <div class="navbar-list">
-        <a href="Home.html">Home</a>
-        <a href="aboutus.html">About us</a>
-        <a href="Our Team.html">Our Team</a>
-        <a href="track.html">Track</a>
-      </div>
+  <!-- Link Stylesheet -->
+  <link rel="stylesheet" href="/style/track.css" />
+</head>
 
-      <div class="navbar-extra" id="hamburger-menu">
-        <a href="#"><i data-feather="menu"></i></a>
-      </div>
-    </nav>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#" class="logo">
+      <h1>XXIShipping</h1>
+    </a>
 
-    <!-- Track Section -->
-    <div class="hero">
-      <div class="heading">
-        <h1>Track Your Receipt ID</h1>
-      </div>
-      <div class="search">
-        <form class="search-form" id="search-receipt">
-          <input
-            type="text"
-            placeholder="Input Your Receipt ID.."
-            name="receipt_id"
-          />
-          <input type="submit" value="Search" />
-        </form>
-      </div>
-      <div class="container">
-        <!-- <div class="container-head">
+    <div class="navbar-list">
+      <a href="Home.html">Home</a>
+      <a href="aboutus.html">About us</a>
+      <a href="Our Team.html">Our Team</a>
+      <a href="track.html">Track</a>
+    </div>
+
+    <div class="navbar-extra" id="hamburger-menu">
+      <a href="#"><i data-feather="menu"></i></a>
+    </div>
+  </nav>
+
+  <!-- Track Section -->
+  <div class="hero">
+    <div class="heading">
+      <h1>Track Your Receipt ID</h1>
+    </div>
+    <div class="search">
+      <form class="search-form" id="search-receipt">
+        <input type="text" placeholder="Input Your Receipt ID.." name="receipt_id" required />
+        <input type="submit" value="Search" />
+      </form>
+    </div>
+    <div class="container">
+      <!-- <div class="container-head">
                 <h4>Receipt ID</h4>
                 <form class="search-box">
                     <i class="search-icon" data-feather="Search"></i>
@@ -61,103 +58,115 @@
                     <button type="submit" class="search-btn">Search</button>
                 </form>
             </div> -->
-        <div class="hero-content">
-            <div class="not-found none-display">
-                Receipt ID Not Found
-            </div>
-            <div class="result none-display">
-                <table>
-                    <tr>
-                        <td>Origin</td>
-                        <td id="origin"></td>
-                    </tr>
-                    <tr>
-                        <td>Destination</td>
-                        <td id="destination"></td>
-                    </tr>
-                    <tr>
-                        <td>Status</td>
-                        <td id="status"></td>
-                    </tr>
-                </table>
-            </div>
-          <ul>
-            <li>
-              <i class="icon" data-feather="clipboard"></i>
-              <div class="progress one">
-                <p>1</p>
-                <i class="check" data-feather="check"></i>
-              </div>
-              <div class="info">
-                <h4 class="status-info">Order Confirmed</h4>
-                <p class="date-info">(1 Januari, 23:45)</p>
-              </div>
-            </li>
-            <li>
-              <i class="icon" data-feather="package"></i>
-              <div class="progress two">
-                <p>2</p>
-                <i class="check" data-feather="check"></i>
-              </div>
-              <div class="info">
-                <h4 class="status-info">Order Packaged</h4>
-                <p class="date-info">(1 Januari, 23:45)</p>
-              </div>
-            </li>
-            <li>
-              <i class="icon" data-feather="truck"></i>
-              <div class="progress three">
-                <p>3</p>
-                <i class="check" data-feather="check"></i>
-              </div>
-              <div class="info">
-                <h4 class="status-info">Delivering Ordered</h4>
-                <p class="date-info">(1 Januari, 23:45)</p>
-              </div>
-            </li>
-            <li>
-              <i class="icon" data-feather="map-pin"></i>
-              <div class="progress four">
-                <p>4</p>
-                <i class="check" data-feather="check"></i>
-              </div>
-              <div class="info">
-                <h4 class="status-info">Order Arrived</h4>
-                <p class="date-info">(1 Januari, 23:45)</p>
-              </div>
-            </li>
-          </ul>
+      <div class="hero-content">
+        <div class="not-found none-display">
+          Receipt ID Not Found
         </div>
+        <div class="result none-display">
+          <table>
+            <tr>
+              <td>Origin</td>
+              <td id="origin"></td>
+            </tr>
+            <tr>
+              <td>Destination</td>
+              <td id="destination"></td>
+            </tr>
+            <tr>
+              <td>Status</td>
+              <td id="status"></td>
+            </tr>
+            <tr>
+              <td>Ordered At</td>
+              <td id="ordered_at"></td>
+            </tr>
+            <tr>
+              <td>Picked At</td>
+              <td id="picked_at"></td>
+            </tr>
+            <tr>
+              <td>Arrived At</td>
+              <td id="arrived_at"></td>
+            </tr>
+          </table>
+        </div>
+        <ul>
+          <li>
+            <i class="icon" data-feather="clipboard"></i>
+            <div class="progress one">
+              <p>1</p>
+              <i class="check" data-feather="check"></i>
+            </div>
+            <div class="info">
+              <h4 class="status-info">Order Confirmed</h4>
+              <p class="date-info" id="ordered_at"></p>
+            </div>
+          </li>
+          <li>
+            <i class="icon" data-feather="package"></i>
+            <div class="progress two">
+              <p>2</p>
+              <i class="check" data-feather="check"></i>
+            </div>
+            <div class="info">
+              <h4 class="status-info">Order Packaged</h4>
+              <p class="date-info" id="ordered_at"></p>
+            </div>
+          </li>
+          <li>
+            <i class="icon" data-feather="truck"></i>
+            <div class="progress three">
+              <p>3</p>
+              <i class="check" data-feather="check"></i>
+            </div>
+            <div class="info">
+              <h4 class="status-info">Delivering Ordered</h4>
+              <p class="date-info" id="picked_at"></p>
+            </div>
+          </li>
+          <li>
+            <i class="icon" data-feather="map-pin"></i>
+            <div class="progress four">
+              <p>4</p>
+              <i class="check" data-feather="check"></i>
+            </div>
+            <div class="info">
+              <h4 class="status-info">Order Arrived</h4>
+              <p class="date-info" id="arrived_at"></p>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
+  </div>
 
-    <!-- Footer Section -->
-    <footer>
-      <div class="socials">
-        <a href="#"><i data-feather="instagram"></i></a>
-        <a href="#"><i data-feather="twitter"></i></a>
-        <a href="#"><i data-feather="facebook"></i></a>
-      </div>
+  <!-- Footer Section -->
+  <footer>
+    <div class="socials">
+      <a href="#"><i data-feather="instagram"></i></a>
+      <a href="#"><i data-feather="twitter"></i></a>
+      <a href="#"><i data-feather="facebook"></i></a>
+    </div>
 
-      <div class="links">
-        <a href="#">Home</a>
-        <a href="#">Our Intergrity</a>
-        <a href="#">Contact</a>
-      </div>
+    <div class="links">
+      <a href="#">Home</a>
+      <a href="#">Our Intergrity</a>
+      <a href="#">Contact</a>
+    </div>
 
-      <div class="credit">
-        <p>Created by <a href="">Ship.com</a> &copy; 2023.</p>
-      </div>
-    </footer>
+    <div class="credit">
+      <p>Created by <a href="">Ship.com</a> &copy; 2023.</p>
+    </div>
+  </footer>
 
-    <!--Feather Icons-->
-    <script>
-      feather.replace();
-    </script>
+  <!--Feather Icons-->
+  <script>
+    feather.replace();
+  </script>
 
-    <!--Javascript-->
-    <script src="/js/script.js"></script>
-    <script src="/js/prgress.js"></script>
-    <script src="/js/handleSubmit.js"></script>
-  </body>
+  <!--Javascript-->
+  <script src="/js/script.js"></script>
+  <script src="/js/handleShipment.js"></script>
+</body>
+
 </html>

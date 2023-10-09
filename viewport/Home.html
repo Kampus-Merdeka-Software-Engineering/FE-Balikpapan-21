@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Required Meta Tags -->
     <meta charset="UTF-8">
@@ -17,11 +18,14 @@
     <!-- Link Stylesheet -->
     <link rel="stylesheet" href="/style/style.css">
 </head>
+
 <body>
 
     <!-- Navbar -->
     <nav class="navbar">
-        <a href="#" class="logo"><h1>XXIShipping</h1></a>
+        <a href="#" class="logo">
+            <h1>XXIShipping</h1>
+        </a>
 
         <div class="navbar-list">
             <a href="home">Home</a>
@@ -55,7 +59,8 @@
             <div class="inter-card">
                 <i data-feather="lock" class="inter-card-icon"></i>
                 <h3 class="inter-card-title">Privacy</h3>
-                <p class="inter-card-desc">We understand this is a big responsibility and work hard to protect your information and put you in control.</p>
+                <p class="inter-card-desc">We understand this is a big responsibility and work hard to protect your
+                    information and put you in control.</p>
             </div>
 
             <div class="inter-card">
@@ -67,7 +72,8 @@
             <div class="inter-card">
                 <i data-feather="archive" class="inter-card-icon"></i>
                 <h3 class="inter-card-title">Act Responsibly</h3>
-                <p class="inter-card-desc">We are convinced that only those who act responsibly can achieve sustained success over the long term.</p>
+                <p class="inter-card-desc">We are convinced that only those who act responsibly can achieve sustained
+                    success over the long term.</p>
             </div>
         </div>
     </section>
@@ -77,35 +83,34 @@
         <h2>Contact <span>Us</span></h2>
         <p>If you need help, please fill in this question for customer support. <br></p>
 
-            <div class="row">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31571.
+        <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31571.
                 00170034191!2d118.70574697542082!3d-8.462844671289417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
                 1!3m3!1m2!1s0x2db58bd13e1c9627%3A0xb90f58a9623e07f8!2sBima%2C%20Kec.%20Mpunda%2C%20Kab.
-                %20Bima%2C%20Nusa%20Tenggara%20Bar.!5e0!3m2!1sid!2sid!4v1695271139692!5m2!1sid!2sid" 
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                class="map"></iframe>
+                %20Bima%2C%20Nusa%20Tenggara%20Bar.!5e0!3m2!1sid!2sid!4v1695271139692!5m2!1sid!2sid" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
 
 
-                <form id="contactUsForm">
-                    <div class="input-group">
-                        <i data-feather="user"></i>
-                        <input type="text" placeholder="Nama" id="nama">
-                    </div>
-                    <div class="input-group">
-                        <i data-feather="mail"></i>
-                        <input type="text" placeholder="Email" id="email">
-                    </div>
-                    <div class="input-group">
-                        <i data-feather="phone"></i>
-                        <input type="text" placeholder="Nomor HP" id="nomorhp">
-                    </div>
-                    <div class="input-group">
-                        <i data-feather="help-circle"></i>
-                        <input type="text" placeholder="Ketik pertanyaan anda" id="pesan">
-                    </div>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-            </div>
+            <form id="contactUsForm">
+                <div class="input-group">
+                    <i data-feather="user"></i>
+                    <input type="text" placeholder="Nama" id="nama">
+                </div>
+                <div class="input-group">
+                    <i data-feather="mail"></i>
+                    <input type="text" placeholder="Email" id="email">
+                </div>
+                <div class="input-group">
+                    <i data-feather="phone"></i>
+                    <input type="text" placeholder="Nomor HP" id="nomorhp">
+                </div>
+                <div class="input-group">
+                    <i data-feather="help-circle"></i>
+                    <input type="text" placeholder="Ketik pertanyaan anda" id="pesan">
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer Section -->
@@ -127,6 +132,19 @@
         </div>
     </footer>
 
+    <!-- create modal when submit contact us -->
+    <div class="modal active" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Thank You!</h2>
+                <span class="close" onclick="toggleModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Your message has been sent. We will reply as soon as possible.</p>
+            </div>
+        </div>
+    </div>
+
     <!--Feather Icons-->
     <script> feather.replace(); </script>
 
@@ -135,4 +153,5 @@
     <script src="/js/handleContactUs.js"></script>
 
 </body>
+
 </html>
